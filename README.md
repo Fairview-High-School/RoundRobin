@@ -1,6 +1,6 @@
 # Round Robin Lab — Process Scheduling
 
-**IB Computer Science 2 (HL) · Bridge P3 · A1.3.3**
+**IB Computer Science 2 (HL) · Operating Systems · A1.3.3**
 
 This is the first task in the course where the operating-system idea and the code
 you write are the same object. The scheduling you traced on the board on Day 18 is
