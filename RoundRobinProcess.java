@@ -95,7 +95,7 @@ public class RoundRobinProcess {
      *
      * The turnaround and wait figures come from the two methods you wrote in
      * Process.java.  For the average, print two decimal places:
-     *     System.out.printf("Average wait time: %.2f%n", average);
+     *     System.out.println(String.format("Average wait time: %.2f", average));
      * ⚠ Watch the integer division trap — (double) totalWait / count.
      */
     public void displayStats() {
