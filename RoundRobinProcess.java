@@ -63,19 +63,19 @@ public class RoundRobinProcess {
      *
      *   4.  Give the running process one time unit (runOneUnit()), add one to the
      *       quantum counter, print the line, then add one to the clock.
-     *       ⚠ Print "(Complete)" on the line if that unit finished the process.
+     *       Print "(Complete)" on the line if that unit finished the process.
      *
      *   5.  Then decide what happens to the process that just ran:
      *         - finished?  record its completion time (that is the clock, AFTER
      *           you added one), add it to finished, and clear the CPU.
      *         - used its whole quantum but not finished?  admitArrivals(clock)
      *           FIRST, then ENQUEUE it at the back of the ready queue and clear
-     *           the CPU.  ⚠ That order is the tie-break rule in the README:
+     *           the CPU.  That order is the tie-break rule in the README:
      *           somebody arriving at that instant gets in line ahead of the
      *           process that was just pre-empted.
      *         - neither?  leave it on the CPU; it keeps running next time unit.
      *
-     * ⚠ The step students get wrong is the requeue in 5.  If your average wait
+     * If your average wait
      * comes out too low, you almost certainly let a process keep the CPU past
      * its quantum.
      */
@@ -96,7 +96,7 @@ public class RoundRobinProcess {
      * The turnaround and wait figures come from the two methods you wrote in
      * Process.java.  For the average, print two decimal places:
      *     System.out.println(String.format("Average wait time: %.2f", average));
-     * ⚠ Watch the integer division trap — (double) totalWait / count.
+     * Watch the integer division trap — (double) totalWait / count.
      */
     public void displayStats() {
         // TODO: write this
